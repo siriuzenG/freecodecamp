@@ -1,0 +1,153 @@
+:root {
+    --flame-red: #FF4500;
+    --charcoal-gray: #333333;
+    --sizzle-orange: #FFA500;
+    --bbq-brown: #8B4513;
+    --grill-silver: #CCCCCC;
+    --zesty-green:  #7FFF00;
+}
+
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    max-width: 1920px;
+}
+
+.header {
+    align-self: stretch;
+    text-align: center;
+    padding: 0 20px;
+    background-color: var(--charcoal-gray);
+    color: var(--grill-silver);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    color: var(--charcoal-gray);
+}
+
+h1, h2{
+    font-weight: 800;
+}
+
+/* Survey Form Styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea, select {
+  display: block;
+  width: 90%;
+  border: 3px solid var(--charcoal-gray);
+  padding: .5rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 3px solid var(--sizzle-orange);
+}
+
+textarea {
+    resize: none;
+}
+select:hover {
+    border: 3px solid var(--sizzle-orange);
+}
+select:hover, .general-question label:hover {
+    cursor: pointer;
+}
+
+
+.personal-information-div,
+.general-questions-div,
+.foods-and-drinks-div,
+.service-div,
+.ambiance-div,
+.overall-exp-div {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    border: 3px solid var(--charcoal-gray);
+    box-shadow: .5rem .5rem 0 var(--charcoal-gray);
+}
+
+.text-label,
+.general-question,
+.foods-and-drinks,
+.service,
+.ambiance,
+.overall-exp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.text-label label,
+.general-question h3,
+.foods-and-drinks h3,
+.service h3,
+.ambiance h3,
+.overall-exp h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.submit-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.submit-div button {
+    width: 150px;
+    font-weight: 900;
+    border-radius: 5px;
+    color: var(--charcoal-gray);
+    background-color: var(--grill-silver);
+    border: 3px solid var(--charcoal-gray);
+    box-shadow: .5rem .5rem 0 var(--charcoal-gray);
+    transition: 0.5s;
+}
+
+.submit-div button:hover {
+    cursor: pointer;
+    background-color: var(--zesty-green);
+    color: var(--charcoal-gray);
+    box-shadow: none;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 800px) {
+    form, .header {
+        padding: 20px;
+    }
+    .submit-div {
+        display: block;
+        justify-content: space-between;
+    }
+    .submit-div button {
+        width: 100%;
+    }
+}

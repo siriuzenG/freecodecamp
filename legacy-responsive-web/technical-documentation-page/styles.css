@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* +++++++  +++++++*/
+  
+  .container{
+    display: flex;
+    font-family: Arial;
+    width: 100%;
+  }
+  .container code{
+    font-family: Consolas;
+    color: green;
+    background-color: lightgray;
+    padding: 3px 10px;
+  }
+  
+  /* +++++++ NAVIGATION BAR +++++++*/
+  
+  #navbar{
+    position: fixed;
+    background-color: white;
+    
+    border-right: 1px solid;
+    
+    height: 100%;
+    max-width: 250px;
+  }
+  #navbar header{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid;
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+  #navbar ul{
+    height: 60%;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar li{
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 1px solid;
+    
+    font-weight: bold;
+  }
+  .nav-link{
+    display: block;
+    text-decoration: none;
+    color: green;
+  }
+  .nav-link:hover, .nav-link:focus{
+    color: purple;
+  }
+  
+  
+  /* +++++++ MAIN DOCUMENT +++++++*/
+  
+  #main-doc{
+    padding: 30px;
+    margin-left: 260px;
+    width: 100%;
+    
+  
+    line-height: 1.5;
+  }
+  #main-doc header{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* +++++++ MEDIA QUERY +++++++*/
+  
+  @media (max-width: 720px){
+    .container{
+      flex-direction: column;
+    }
+    
+    #navbar{
+      position: absolute;
+      max-width: none;
+      max-height: 200px;
+      width: 100%;
+      font-size: 95%;
+    }
+    
+    #main-doc{
+      margin-left: 0px;
+      margin-top: 200px;
+      font-size: 85%;
+    }
+  }

@@ -1,0 +1,225 @@
+:root {
+    --raisin-black: hsla(340, 9%, 13%, 1);
+    --gray: hsla(270, 1%, 51%, 1);
+    --persian-red: hsla(357, 62%, 50%, 1);
+    --davys-gray: hsla(324, 3%, 31%, 1);
+    --white: hsla(240, 50%, 99%, 1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* global style */
+html {
+    transition: 0.5;
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: var(--raisin-black);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* header nav style */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--white);
+    color: var(--raisin-black);
+
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#header-img {
+    display: block;
+    margin: auto 0;
+    height: 100%;
+    width: auto;
+}
+
+#nav-bar, #header-img-div {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-weight: 900;
+    font-size: x-large;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--raisin-black);
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: var(--persian-red);
+}
+/* main tag style */
+
+main {
+    max-width: 1920px;
+    height: auto;
+    
+    margin-top: 10vh;
+    padding: 20px 30px 25px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+#intro {
+    max-width: 1000px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--davys-gray);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: large;
+}
+
+#intro img {
+    max-width: 100%;
+    height: auto;
+}
+
+#menu,
+#ambiance {
+    max-width: 1000px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+#menu div,
+#ambiance div {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#video {
+    height: 480px;
+    width: 100%;
+}
+
+#reservation {
+    max-width: 1000px;
+    height: auto;
+
+    display: block;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 3px solid var(--persian-red);
+    border-radius: 3px;
+}
+
+#form {
+    max-width: 1000px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    background-color: var(--davys-gray);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button, input[type='submit'], input[type="email"] {
+    border: 3px solid var();
+    border-radius: 3px;
+    color: var(--raisin-black);
+    padding: .5rem;
+    outline: none;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #header {
+        height: 10vh;
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-bar, #header-img-div {
+        width: 100%;
+        height: 50%;
+    
+        font-weight: 700;
+        font-size: large;
+        gap: 0 10px 0 0;
+    }
+
+    #header-img-div {
+        justify-content: flex-start;
+    }
+    #nav-bar {
+        background-color: var(--persian-red);
+        justify-content: flex-end;
+    }
+    .nav-link:hover {
+        color: var(--white);
+    }
+
+    /* main */
+
+    #intro {
+        flex-direction: column;
+        font-size: medium;
+    }
+
+    #menu div,
+    #ambiance div {
+        flex-wrap: wrap;
+    }
+
+    #form{
+        flex-wrap: wrap;
+    }
+
+}

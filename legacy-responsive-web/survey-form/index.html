@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sam's Bar and Grill Survey Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Sam's Bar and Grill</h1>
+        <p id="description">We value your feedback! Please take a few minutes to complete this online survey to help us improve our services at Sam's Bar and Grill. Your responses will remain anonymous.</p>
+    </div>
+
+    <form action="" id="survey-form">
+        <div class="personal-information-div">
+            <h2>Personal Information</h2>
+            <div class="text-label">
+                <label for="name" id="name-label">Enter your name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="text-label">
+                <label for="email" id="email-label">Enter your email:</label>
+                <input type="email" name="" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="text-label">
+                <label for="number" id="number-label">Enter your age:</label>
+                <input type="number" name="" id="number" placeholder="Age" min="6" max="120">
+            </div>
+        </div>
+
+        <div class="general-questions-div">
+            <h2>General Question</h2>
+            <div class="general-question">
+                <h3>How often do you visit Sam's Bar and Grill?</h3>
+                <label for="rd-1"><input type="radio" name="visit" id="rd-1" value="First Time Visitor" checked>First Time Visitor</label>
+                <label for="rd-2"><input type="radio" name="visit" id="rd-2" value="Daily">Daily</label>
+                <label for="rd-3"><input type="radio" name="visit" id="rd-3" value="Weekly">Weekly</label>
+                <label for="rd-4"><input type="radio" name="visit" id="rd-4" value="Monthly">Monthly</label>
+                <label for="rd-5"><input type="radio" name="visit" id="rd-5" value="Occasionally">Occasionally</label>
+            </div>
+            <div class="general-question">
+                <h3>How did you hear about Sam's Bar and Grill? (Select all that apply)</h3>
+                <label for="chk1"><input type="checkbox" name="discover" id="chk1" value="Word of mouth" checked>Word of mouth</label>
+                <label for="chk2"><input type="checkbox" name="discover" id="chk2" value="Online search">Online search</label>
+                <label for="chk3"><input type="checkbox" name="discover" id="chk3" value="Social media">Social media</label>
+                <label for="chk4"><input type="checkbox" name="discover" id="chk4" value="Advertising (print, TV, radio)">Advertising (print, TV, radio)</label>
+                <label for="chk5"><input type="checkbox" name="discover" id="chk5" value="Other (please specify):">Other (please specify): <input type="text"></label>
+            </div>
+        </div>
+
+        <div class="foods-and-drinks-div">
+            <h2>Foods and Drinks</h2>
+            <div class="foods-and-drinks">
+                <h3>How satisfied are you with the quality of food at Sam's Bar and Grill?</h3>
+                <select name="satis1" id="dropdown">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Dissastisfied</option>
+                    <option value="1">Very dissatisfied</option>
+                </select>
+            </div>
+            <div class="foods-and-drinks">
+                <h3>How satisfied are you with the variety of menu options available?</h3>
+                <select name="satis2" id="dropdown1">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Dissastisfied</option>
+                    <option value="1">Very dissatisfied</option>
+                </select>
+            </div>
+            <div class="foods-and-drinks">
+                <h3>Do you have any dietary restrictions or preferences? (Please specify)</h3>
+                <textarea name="" id="restrictionsorpreferences" rows="5"></textarea>
+            </div>
+            <div class="foods-and-drinks">
+                <h3>How satisfied are you with the quality of drinks at Sam's Bar and Grill?</h3>
+                <select name="satis3" id="dropdown2">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Dissastisfied</option>
+                    <option value="1">Very dissatisfied</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="service-div">
+            <h2>Service</h2>
+            <div class="service">
+                <h3>How satisfied are you with the attentiveness and friendliness of the staff?</h3>
+                <select name="satis4" id="dropdown3">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Dissastisfied</option>
+                    <option value="1">Very dissatisfied</option>
+                </select>
+            </div>
+            <div class="service">
+                <h3>How satisfied are you with the overall speed of service?</h3>
+                <select name="satis5" id="dropdown4">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Dissastisfied</option>
+                    <option value="1">Very dissatisfied</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="ambiance-div">
+            <h2>Ambiance</h2>
+            <div class="ambiance">
+                <h3>How would you rate the overall ambiance of Sam's Bar and Grill?</h3>
+                <select name="satis6" id="dropdown5">
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Below Average</option>
+                    <option value="1">Poor</option>
+                </select>
+            </div>
+            <div class="ambiance">
+                <h3>Do you have any suggestions for improving the ambiance?</h3>
+                <textarea name="" id="ambiance-improv" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="overall-exp-div">
+            <h2>Overall Experience</h2>
+            <div class="overall-exp">
+                <h3>How likely are you to recommend Sam's Bar and Grill to a friend or colleague?</h3>
+                <select name="satis7" id="dropdown6">
+                    <option value="5">Very Likely</option>
+                    <option value="4">Likely</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Unlikely</option>
+                    <option value="1">Very Unlikely</option>
+                </select>
+            </div>
+            <div class="overall-exp">
+                <h3>Please provide any additional comments or suggestions for improving our services. </h3>
+                <textarea name="" id="comments" rows="5"></textarea>
+            </div>
+        </div>
+        
+        <div class="submit-div">
+            <h3>Thank you for taking the time to complete this survey! Your feedback is greatly appreciated.</h3>
+            <button type="submit" id="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>

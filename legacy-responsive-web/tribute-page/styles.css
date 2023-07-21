@@ -1,0 +1,118 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #F8F8F8;
+    color: #252525;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+#main {
+    align-self: stretch;
+    
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    background-color: #E1E1E1ff;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.my-figure {
+    align-self: stretch;
+    background-color: #F8F8F8ff;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 15px;
+    text-align: justify;
+    font-style: italic;
+}
+
+#tribute-info {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.my-article {
+    align-self: center;
+}
+
+.my-article h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.my-article ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.my-article li {
+    margin-bottom: 10px;
+}
+
+.my-article li::before {
+    content: "•";
+    color: #252525ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.footer {
+    align-self: stretch;
+    background-color: #252525ff;
+    color: #F8F8F8ff;
+    padding: 20px;
+    text-align: center;
+}
+
+#quote {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#quote p {
+    margin-bottom: 5px;
+}
+
+#quote cite {
+    font-style: italic;
+}
+
+#tribute-link {
+    color: yellow;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    color: #939393ff;
+}
